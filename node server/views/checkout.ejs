@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detector</title>
+    <link rel="icon" type="image" href="./images/black_logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script defer src="/js/checkout.js"></script>
+</head>
+<body class="chkBody">
+    <section class="mx-auto chkSection">
+
+        <div class="row text-center text-thin">
+            <div class="col errorMsg">
+                <%= locals.errorMsg %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-left" >
+                <h4 class="webTitle"> 
+                    <img src="./images/black_logo.png" alt="logo" width="30px" style="margin-right:10px;">  
+                    Deep Fake Detector
+                </h4>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col" ><span class="chkTitle">Donate</span> <span class=" chkDesc">To help us in bringing more features and generating better results </span></div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-5 col-12">
+                <section class="mx-auto spSection p-2">
+                    <div class="row">
+                        <div class="col text-center"> <img src="./images/stripe.png" alt="Stripe" width="150px"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center thin-text"><h5> Donate with Stripe </h5></div>
+                    </div>
+                    <div class="row text-center m-4">
+                        <div class="col">
+                            <input class="btn btn-primary btn-lg btnOneDollar" type="button" value="Donate 1$" name="btnOneDollar">
+                        </div>
+                    </div>
+                    <div class="row text-center m-4">
+                        <div class="col">
+                            <input class="btn btn-primary btn-lg btnFiveDollar" type="button" value="Donate 5$" name="btnFiveDollar">
+                        </div>
+                    </div>
+                    <div class="row text-center m-4">
+                        <div class="col">
+                            <input class="btn btn-primary btn-lg btnTenDollar" type="button" value="Donate 10$" name="btnTenDollar">
+                        </div>
+                    </div>
+                    <div class="row text-center m-4">
+                        <div class="col">
+                            <input class="btn btn-primary btn-lg btnHundredDollar" type="button" value="Donate 100$" name="btnHundredDollar">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5 col-12">
+                <section class="mx-auto epSection p-2">
+                    <div class="row">
+                        <div class="col text-center"> <img src="./images/easypaisa.jpg" alt="EasyPaisa" width="150px" ></div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col text-center thin-text"> <h5>Donate with EasyPaisa</h5></div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col text-center thin-text"> <h5>Scan this QR Code Using EasyPaisa App</h5></div>
+                    </div>
+
+                    <div class="row mt-1">
+                        <div class="col text-center thin-text"> <img src="./images/QR.jpeg" alt="qr code" width="250px"></div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

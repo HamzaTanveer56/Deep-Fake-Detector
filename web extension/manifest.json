@@ -1,0 +1,18 @@
+{
+    "name":"Deep Fake Detector",
+    "description":"It's a web extension that detects whether videos being played on your browser are Deep-Faked or Not",
+    "version":"1.0",
+    "manifest_version":3,
+    "background":{
+        "service_worker":"script.js"
+    },
+    "action":{
+        "default_popup":"./extension.html"
+    },
+    "icons": {
+        "16": "black_logo.png",
+        "32": "black_logo.png",
+        "48": "black_logo.png",
+        "128": "black_logo.png"
+      }
+}

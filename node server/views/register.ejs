@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Detector</title>
+    <link rel="icon" type="image" href="./images/black_logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script defer src="/js/register.js"></script>
+</head>
+<body class="regBody">
+    <section class="mx-auto regSection mt-n2 mb-5">
+        <% if(locals.successMsg === "Successfully Registered"){ %>
+            <h3 class="text-center successMsg text-success"> <%= locals.successMsg %>  </h3>
+        <% }else{ %>
+            <h3 class="text-center successMsg text-danger"> <%= locals.successMsg %> </h3>
+        <% } %>
+        <div class="container m-5">
+            <form action="./register" method="POST" id="form">
+
+                <div class="row">
+                    <div class="col">
+                        <h4>Deep Fake Detector</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Create your Account</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mt-5 col-12">
+                        <!--image goes here-->
+                        <img src="./images/singup.svg" alt="image by LinguaProf" width="200px">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <!--form goes here-->
+                        <form action="./register" method="POST">
+                            <div class="row">
+                                <div class="col-lg-5 col-10 mt-4">
+                                    <input type="name" name="fname" class="form-control" placeholder="First Name" id="fname">
+                                    <div id="fnameError" class="form-text"></div>
+                                  </div>
+                                  <div class="col-lg-5 col-10 mt-4">
+                                      <input type="lname" name="lname" class="form-control" placeholder="Last Name" id="lname">
+                                      <div id="lnameError" class="form-text"></div>
+                                    </div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-lg-10 col-10">
+                                    <input type="email" name="email" class="form-control" placeholder="Enter your Email" id="email">
+                                    <div id="emailError" class="form-text errorMsg"><span class=" text-danger"><%= locals.emailErrorMsg %></span></div>
+                                  </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-5 col-10 mt-4">
+                                    <input type="password" name="pass" class="form-control" placeholder="Password" id="pass" >
+                                    <div id="passError" class="form-text"></div>
+                                  </div>
+                                  <div class="col-lg-5 col-10 mt-4">
+                                      <input type="password" name="cpass" class="form-control" id="cpass" placeholder="Confirm Password" >
+                                      <div id="cpassError" class="form-text"></div>
+                                    </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-10 col-9">
+                                    <label class="form-text">Use 8 or more characters with a mix of letters, numbers & symbols</label>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2 mb-2">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="passCheck">
+                                        <label class="form-check-label" for="passCheck">
+                                          Show Password
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-10 mt-3">
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>                                    
+                                </div>
+
+                                <div class="col-lg-2"></div>
+
+                                <div class="col-lg-4 col-10 mt-4">
+                                    <a href="login" class="text-primary regLink">Sign in Instead</a>                                   
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
